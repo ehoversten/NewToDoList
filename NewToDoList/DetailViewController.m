@@ -33,9 +33,8 @@
 - (IBAction)saveButtonPressed:(id)sender  {
     NSLog(@"Saved");
     _toDoObject.taskName = _taskNameTextField.text;
-//    _toDoObject.taskCatagory = [NSString stringWithFormat:@"%@",[_taskCatagorySeg.selectedSegmentIndex intValue]];
-    _toDoObject.taskPriority = [NSNumber numberWithInt: [_taskNameTextField.text intValue]];
-//    _toDoObject.taskPriority = [NSNumber numberWithLong:_taskPrioritySeg.selectedSegmentIndex];
+    _toDoObject.taskCatagory = [NSString stringWithFormat:@"%ld",(long)[_taskCatagorySeg selectedSegmentIndex]];
+    _toDoObject.taskPriority = [NSNumber numberWithLong: [_taskPrioritySeg selectedSegmentIndex]];
     _toDoObject.dateDue = _taskDueDatePicker.date;
     [_appDelegate saveContext];
     [self.navigationController popViewControllerAnimated:true];
@@ -71,9 +70,10 @@
     // is there already and Object? if not create it
     if (_toDoObject != nil) {
         _taskNameTextField.text = [_toDoObject taskName];
-//        [_taskPrioritySeg setSelectedSegmentIndex:[_toDoObject.taskPriority intValue]];
-//        [_taskCatagorySeg setSelectedSegmentIndex:[_toDoObject.taskCatagory intValue]];
-//        [_taskDueDatePicker setDate:_toDoObject.dateDue];
+        [_taskPrioritySeg setSelectedSegmentIndex:[_toDoObject.taskPriority intValue]];
+        [_taskCatagorySeg setSelectedSegmentIndex:[_toDoObject.taskCatagory intValue]];
+        _taskDescription.text = [_toDoObject taskDescription];
+        [_taskDueDatePicker setDate:_toDoObject.dateDue];
     } else {
         ToDoTasks *newAddToDo = (ToDoTasks *)[NSEntityDescription insertNewObjectForEntityForName:@"ToDoTasks" inManagedObjectContext:_managedObjectContext];
         _toDoObject = newAddToDo;
