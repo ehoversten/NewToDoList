@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ToDoTasks.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 
 
 @end

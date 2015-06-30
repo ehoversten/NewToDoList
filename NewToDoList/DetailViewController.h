@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ToDoTasks.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UITextFieldDelegate, UINavigationControllerDelegate>
+
+@property (nonatomic, strong)ToDoTasks          *toDoObject;
 
 @end

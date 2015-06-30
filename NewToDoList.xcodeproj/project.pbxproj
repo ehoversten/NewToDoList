@@ -15,6 +15,8 @@
 		C7F7BC8F1B3F6F1D00719800 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F7BC8E1B3F6F1D00719800 /* Images.xcassets */; };
 		C7F7BC921B3F6F1D00719800 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7F7BC901B3F6F1D00719800 /* LaunchScreen.xib */; };
 		C7F7BC9E1B3F6F1D00719800 /* NewToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F7BC9D1B3F6F1D00719800 /* NewToDoListTests.m */; };
+		C7F7BCAC1B3F7FDB00719800 /* ToDoTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F7BCAB1B3F7FDB00719800 /* ToDoTasks.m */; };
+		C7F7BCAF1B40F6BC00719800 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F7BCAE1B40F6BC00719800 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		C7F7BC971B3F6F1D00719800 /* NewToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F7BC9C1B3F6F1D00719800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7F7BC9D1B3F6F1D00719800 /* NewToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewToDoListTests.m; sourceTree = "<group>"; };
+		C7F7BCAA1B3F7FDB00719800 /* ToDoTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTasks.h; sourceTree = "<group>"; };
+		C7F7BCAB1B3F7FDB00719800 /* ToDoTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTasks.m; sourceTree = "<group>"; };
+		C7F7BCAD1B40F6BC00719800 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C7F7BCAE1B40F6BC00719800 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +94,13 @@
 				C7F7BC881B3F6F1D00719800 /* ViewController.h */,
 				C7F7BC891B3F6F1D00719800 /* ViewController.m */,
 				C7F7BC8B1B3F6F1D00719800 /* Main.storyboard */,
+				C7F7BCAD1B40F6BC00719800 /* DetailViewController.h */,
+				C7F7BCAE1B40F6BC00719800 /* DetailViewController.m */,
 				C7F7BC8E1B3F6F1D00719800 /* Images.xcassets */,
 				C7F7BC901B3F6F1D00719800 /* LaunchScreen.xib */,
 				C7F7BC851B3F6F1D00719800 /* NewToDoList.xcdatamodeld */,
+				C7F7BCAA1B3F7FDB00719800 /* ToDoTasks.h */,
+				C7F7BCAB1B3F7FDB00719800 /* ToDoTasks.m */,
 				C7F7BC7E1B3F6F1D00719800 /* Supporting Files */,
 			);
 			path = NewToDoList;
@@ -225,7 +235,9 @@
 				C7F7BC871B3F6F1D00719800 /* NewToDoList.xcdatamodeld in Sources */,
 				C7F7BC841B3F6F1D00719800 /* AppDelegate.m in Sources */,
 				C7F7BC8A1B3F6F1D00719800 /* ViewController.m in Sources */,
+				C7F7BCAC1B3F7FDB00719800 /* ToDoTasks.m in Sources */,
 				C7F7BC811B3F6F1D00719800 /* main.m in Sources */,
+				C7F7BCAF1B40F6BC00719800 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
