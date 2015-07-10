@@ -35,6 +35,7 @@
     _toDoObject.taskName = _taskNameTextField.text;
     _toDoObject.taskCatagory = [NSString stringWithFormat:@"%ld",(long)[_taskCatagorySeg selectedSegmentIndex]];
     _toDoObject.taskPriority = [NSNumber numberWithLong: [_taskPrioritySeg selectedSegmentIndex]];
+    _toDoObject.taskDescription = _taskDescription.text;
     _toDoObject.dateDue = _taskDueDatePicker.date;
     [_appDelegate saveContext];
     [self.navigationController popViewControllerAnimated:true];
